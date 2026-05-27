@@ -80,7 +80,7 @@ export default function Gallery({ lang }: GalleryProps) {
         {/* Title track & Filter menu */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 text-left">
           <div className="max-w-xl">
-            <span className="font-mono text-xs text-[#38bdf8] font-bold tracking-[0.3em] uppercase mb-4 block">
+            <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
               {current.tag}
             </span>
             <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -95,7 +95,7 @@ export default function Gallery({ lang }: GalleryProps) {
             href="https://www.instagram.com/patrissurf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 px-6 py-4 rounded-none border border-slate-200 hover:border-[#38bdf8] bg-slate-50 hover:bg-[#38bdf8]/5 text-slate-800 hover:text-[#38bdf8] text-xs font-mono font-bold tracking-widest uppercase transition-all duration-300 self-start shrink-0"
+            className="flex items-center space-x-2 px-6 py-4 rounded-none border border-slate-200 hover:border-[#04f3af] bg-slate-50 hover:bg-[#04f3af]/5 text-slate-800 hover:text-[#04f3af] text-xs font-mono font-bold tracking-widest uppercase transition-all duration-300 self-start shrink-0"
           >
             <Instagram className="w-4 h-4" />
             <span>{current.instagramCta}</span>
@@ -118,7 +118,7 @@ export default function Gallery({ lang }: GalleryProps) {
                 {active && (
                   <motion.span
                     layoutId="activeGalleryFilter"
-                    className="absolute inset-0 bg-[#38bdf8] rounded-none z-0"
+                    className="absolute inset-0 bg-[#04f3af] rounded-none z-0"
                     transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                   />
                 )}
@@ -160,7 +160,7 @@ export default function Gallery({ lang }: GalleryProps) {
 
                 {/* Content Overlay */}
                 <div className="absolute inset-x-0 bottom-0 p-6 z-20 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 text-left">
-                  <div className="flex items-center space-x-2 text-[#38bdf8] text-[10px] font-mono tracking-widest uppercase mb-2">
+                  <div className="flex items-center space-x-2 text-[#04f3af] text-[10px] font-mono tracking-widest uppercase mb-2">
                     <Camera className="w-3.5 h-3.5" />
                     <span>{item.category}</span>
                   </div>
@@ -223,7 +223,7 @@ export default function Gallery({ lang }: GalleryProps) {
               {/* Navigation trigger left */}
               <button
                 onClick={() => navigateLightbox('prev')}
-                className="absolute left-4 p-4 rounded-none bg-white/5 border border-white/10 text-white/70 hover:text-white hover:border-[#38bdf8] transition-all z-20 focus:outline-none"
+                className="absolute left-4 p-4 rounded-none bg-white/5 border border-white/10 text-white/70 hover:text-white hover:border-[#04f3af] transition-all z-20 focus:outline-none"
                 aria-label="Previous Slide"
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -250,7 +250,7 @@ export default function Gallery({ lang }: GalleryProps) {
               {/* Navigation trigger right */}
               <button
                 onClick={() => navigateLightbox('next')}
-                className="absolute right-4 p-4 rounded-none bg-white/5 border border-white/10 text-white/70 hover:text-white hover:border-[#38bdf8] transition-all z-20 focus:outline-none"
+                className="absolute right-4 p-4 rounded-none bg-white/5 border border-white/10 text-white/70 hover:text-white hover:border-[#04f3af] transition-all z-20 focus:outline-none"
                 aria-label="Next Slide"
               >
                 <ChevronRight className="w-6 h-6" />
@@ -259,7 +259,7 @@ export default function Gallery({ lang }: GalleryProps) {
 
             {/* Bottom Caption Overlay */}
             <div className="relative z-10 max-w-xl text-center mt-6 p-4">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-[#38bdf8] block mb-2 font-bold">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-[#04f3af] block mb-2 font-bold">
                 #{GALLERY_ITEMS[lightboxIndex].category}
               </span>
               <p className="font-serif italic text-base sm:text-lg text-white/85 max-w-md mx-auto">

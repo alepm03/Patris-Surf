@@ -118,7 +118,7 @@ export default function About({ lang }: AboutProps) {
                 whileInView={{ opacity: 1, rotate: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="absolute -top-6 -left-6 px-5 py-3 rounded-none bg-[#38bdf8] text-white font-display font-medium text-xs tracking-widest uppercase shadow-xl z-20 hidden sm:flex items-center space-x-2"
+                className="absolute -top-6 -left-6 px-5 py-3 rounded-none bg-[#04f3af] text-white font-display font-medium text-xs tracking-widest uppercase shadow-xl z-20 hidden sm:flex items-center space-x-2"
               >
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 <span>Est. 2014</span>
@@ -130,7 +130,7 @@ export default function About({ lang }: AboutProps) {
           <div className="lg:col-span-7 flex flex-col justify-center text-left">
             
             {/* Header Track */}
-            <span className="font-mono text-xs text-[#38bdf8] font-semibold tracking-[0.3em] uppercase mb-4 block">
+            <span className="font-mono text-xs text-[#04f3af] font-semibold tracking-[0.3em] uppercase mb-4 block">
               {current.sectionTitle}
             </span>
 
@@ -147,7 +147,7 @@ export default function About({ lang }: AboutProps) {
             {/* Editorial blockquote */}
             <motion.div
               initial={{ borderLeftColor: 'rgba(0,0,0,0.05)' }}
-              whileInView={{ borderLeftColor: '#38bdf8' }}
+              whileInView={{ borderLeftColor: '#04f3af' }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
               className="border-l-[3px] pl-6 py-1 mb-6"
@@ -155,7 +155,7 @@ export default function About({ lang }: AboutProps) {
               <p className="font-serif italic text-lg md:text-xl text-slate-800 font-medium leading-relaxed mb-3">
                 {current.quote}
               </p>
-              <span className="font-sans text-[11px] uppercase tracking-widest text-[#38bdf8] font-bold block">
+              <span className="font-sans text-[11px] uppercase tracking-widest text-[#04f3af] font-bold block">
                 — {current.quoteAuthor}
               </span>
             </motion.div>
@@ -175,9 +175,9 @@ export default function About({ lang }: AboutProps) {
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.8, delay: i * 0.15 }}
                 key={i}
-                className="p-8 rounded-none bg-white border border-slate-100 shadow-sm hover:border-[#38bdf8]/40 hover:shadow-md transition-all duration-300 group text-left"
+                className="p-8 rounded-none bg-white border border-slate-100 shadow-sm hover:border-[#04f3af]/40 hover:shadow-md transition-all duration-300 group text-left"
               >
-                <div className="h-10 w-10 border border-[#38bdf8] flex items-center justify-center mb-6 group-hover:bg-[#38bdf8] group-hover:text-white text-[#38bdf8] transition-colors rounded-none">
+                <div className="h-10 w-10 border border-[#04f3af] flex items-center justify-center mb-6 group-hover:bg-[#04f3af] group-hover:text-white text-[#04f3af] transition-colors rounded-none">
                   <IconComponent className="w-5 h-5" />
                 </div>
                 <h3 className="font-display font-bold text-lg text-slate-900 mb-3">

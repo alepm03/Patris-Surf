@@ -103,7 +103,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
         {/* Header Block and Filter Deck */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 text-left">
           <div className="max-w-xl">
-            <span className="font-mono text-xs text-[#38bdf8] font-bold tracking-[0.3em] uppercase mb-4 block">
+            <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
               {current.tag}
             </span>
             <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6">
@@ -130,7 +130,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                   {active && (
                     <motion.span
                       layoutId="activeFilterBg"
-                      className="absolute inset-0 bg-[#38bdf8] rounded-none z-0"
+                      className="absolute inset-0 bg-[#04f3af] rounded-none z-0"
                       transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                     />
                   )}
@@ -156,7 +156,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 whileHover={{ y: -6 }}
                 key={exp.id}
-                className="group cursor-pointer flex flex-col h-full rounded-none bg-white border border-slate-200 hover:border-[#38bdf8]/40 overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 text-left"
+                className="group cursor-pointer flex flex-col h-full rounded-none bg-white border border-slate-200 hover:border-[#04f3af]/40 overflow-hidden shadow-sm hover:shadow-md transition-all duration-500 text-left"
                 onClick={() => setSelectedExp(exp)}
               >
                 {/* Image Framing with zoom effect */}
@@ -171,14 +171,14 @@ export default function Experiences({ lang }: ExperiencesProps) {
                   
                   {/* Category Pill Overlays */}
                   <div className="absolute top-4 left-4 z-20 flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-none font-mono text-[9px] font-bold tracking-widest uppercase bg-slate-900 text-[#38bdf8] border border-[#38bdf8]/40 backdrop-blur-sm">
+                    <span className="px-3 py-1 rounded-none font-mono text-[9px] font-bold tracking-widest uppercase bg-slate-900 text-[#04f3af] border border-[#04f3af]/40 backdrop-blur-sm">
                       {exp.subtitle}
                     </span>
                   </div>
 
                   {/* Level text inside card */}
                   <div className="absolute bottom-4 left-4 z-20">
-                    <span className="font-mono text-[9px] uppercase tracking-widest font-bold text-white bg-[#38bdf8] rounded-none px-2.5 py-1 backdrop-blur-md">
+                    <span className="font-mono text-[9px] uppercase tracking-widest font-bold text-white bg-[#04f3af] rounded-none px-2.5 py-1 backdrop-blur-md">
                       {exp.level}
                     </span>
                   </div>
@@ -186,7 +186,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
 
                 {/* Content Details */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="font-display font-bold text-xl text-[#020617] mb-2 group-hover:text-[#38bdf8] transition-colors tracking-tight">
+                  <h3 className="font-display font-bold text-xl text-[#020617] mb-2 group-hover:text-[#04f3af] transition-colors tracking-tight">
                     {exp.title}
                   </h3>
                   
@@ -200,7 +200,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                       <span className="font-mono text-[9px] uppercase tracking-widest text-slate-400">
                         {current.priceLabel}
                       </span>
-                      <span className="font-display font-bold text-xl text-[#38bdf8]">
+                      <span className="font-display font-bold text-xl text-[#04f3af]">
                         {exp.price}
                       </span>
                     </div>
@@ -216,7 +216,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                   </div>
 
                   {/* Reveal detail hook */}
-                  <div className="mt-4 pt-2 flex items-center text-xs font-mono font-bold tracking-wider text-slate-400 group-hover:text-[#38bdf8] transition-colors">
+                  <div className="mt-4 pt-2 flex items-center text-xs font-mono font-bold tracking-wider text-slate-400 group-hover:text-[#04f3af] transition-colors">
                     <span className="uppercase">{current.ctaLearnMore}</span>
                     <ChevronRight className="w-3.5 h-3.5 ml-1 transform group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -232,8 +232,8 @@ export default function Experiences({ lang }: ExperiencesProps) {
           whileInView={{ opacity: 1 }}
           className="mt-16 text-center text-[10px] sm:text-xs font-mono tracking-widest text-slate-600 flex items-center justify-center gap-2 border border-slate-200 rounded-none py-4 px-6 bg-slate-50"
         >
-          <div className="w-4 h-4 border border-[#38bdf8] rounded-full flex items-center justify-center">
-            <div className="w-1.5 h-1.5 bg-[#38bdf8] rounded-full animate-pulse"></div>
+          <div className="w-4 h-4 border border-[#04f3af] rounded-full flex items-center justify-center">
+            <div className="w-1.5 h-1.5 bg-[#04f3af] rounded-full animate-pulse"></div>
           </div>
           <span className="uppercase leading-relaxed">{current.inclusionSeal}</span>
         </motion.div>
@@ -274,14 +274,14 @@ export default function Experiences({ lang }: ExperiencesProps) {
                 {/* Close Button Trigger */}
                 <button
                   onClick={() => setSelectedExp(null)}
-                  className="absolute top-4 right-4 p-2.5 rounded-none bg-white/90 hover:bg-[#38bdf8] hover:text-white border border-slate-200 text-slate-800 transition-all z-20 focus:outline-none"
+                  className="absolute top-4 right-4 p-2.5 rounded-none bg-white/90 hover:bg-[#04f3af] hover:text-white border border-slate-200 text-slate-800 transition-all z-20 focus:outline-none"
                   aria-label="Close Details"
                 >
                   <X className="w-4 h-4" />
                 </button>
 
                 <div className="absolute bottom-6 left-6 z-20 text-left">
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-[#38bdf8] font-bold bg-slate-900/90 border border-[#38bdf8]/40 px-3 py-1.5 rounded-none backdrop-blur-sm mb-2 inline-block">
+                  <span className="font-mono text-[9px] uppercase tracking-widest text-[#04f3af] font-bold bg-slate-900/90 border border-[#04f3af]/40 px-3 py-1.5 rounded-none backdrop-blur-sm mb-2 inline-block">
                     {selectedExp.subtitle}
                   </span>
                   <h3 className="font-display font-black text-2xl sm:text-3xl text-white uppercase tracking-tight">
@@ -312,7 +312,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                     <span className="font-mono text-[9px] text-slate-400 uppercase tracking-widest mb-1">
                       {current.durationLabel}
                     </span>
-                    <span className="font-sans text-xs text-[#38bdf8] font-bold">
+                    <span className="font-sans text-xs text-[#04f3af] font-bold">
                       {selectedExp.duration}
                     </span>
                   </div>
@@ -334,14 +334,14 @@ export default function Experiences({ lang }: ExperiencesProps) {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
                   {getIncludedList(selectedExp.id, lang).map((item, id) => (
                     <li key={id} className="flex items-start space-x-2 text-xs text-slate-600 font-light">
-                      <Check className="w-4 h-4 text-[#38bdf8] shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-[#04f3af] shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="flex items-center space-x-2 text-[10px] font-sans text-slate-400 border-t border-slate-100 pt-4 mb-6">
-                  <AlertCircle className="w-3.5 h-3.5 text-[#38bdf8]" />
+                  <AlertCircle className="w-3.5 h-3.5 text-[#04f3af]" />
                   <span>{current.equipmentNote}</span>
                 </div>
 
@@ -359,7 +359,7 @@ export default function Experiences({ lang }: ExperiencesProps) {
                   <a
                     href="#contact"
                     onClick={() => setSelectedExp(null)}
-                    className="px-8 py-4 text-center rounded-none bg-[#38bdf8] text-white font-display font-bold text-xs tracking-widest uppercase hover:bg-slate-900 transition-all flex items-center justify-center gap-2"
+                    className="px-8 py-4 text-center rounded-none bg-[#04f3af] text-white font-display font-bold text-xs tracking-widest uppercase hover:bg-slate-900 transition-all flex items-center justify-center gap-2"
                   >
                     <span>{current.ctaBook}</span>
                     <ChevronRight className="w-4 h-4" />

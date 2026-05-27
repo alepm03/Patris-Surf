@@ -120,7 +120,7 @@ export default function Contact({ lang }: ContactProps) {
         
         {/* Title Blocks */}
         <div className="max-w-3xl mb-16 md:mb-24 text-left">
-          <span className="font-mono text-xs text-[#38bdf8] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -150,7 +150,7 @@ export default function Contact({ lang }: ContactProps) {
                     id="contact-form-node"
                   >
                     <h3 className="font-display font-bold text-lg text-[#020617] mb-6 flex items-center gap-2 uppercase tracking-wide">
-                      <Calendar className="w-5 h-5 text-[#38bdf8]" />
+                      <Calendar className="w-5 h-5 text-[#04f3af]" />
                       <span>{current.formHeader}</span>
                     </h3>
 
@@ -166,7 +166,7 @@ export default function Contact({ lang }: ContactProps) {
                         placeholder="Patricia Díaz"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all placeholder-slate-400"
+                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all placeholder-slate-400"
                       />
                     </div>
 
@@ -182,7 +182,7 @@ export default function Contact({ lang }: ContactProps) {
                         placeholder="patri@patrissurf.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all placeholder-slate-400"
+                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all placeholder-slate-400"
                       />
                     </div>
 
@@ -198,7 +198,7 @@ export default function Contact({ lang }: ContactProps) {
                           id="experience"
                           value={formData.experience}
                           onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
-                          className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-xs focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all"
+                          className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-xs focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all"
                         >
                           {Object.entries(current.experiencesNames).map(([id, name]) => (
                             <option key={id} value={id}>
@@ -217,7 +217,7 @@ export default function Contact({ lang }: ContactProps) {
                           id="level"
                           value={formData.level}
                           onChange={(e) => setFormData({ ...formData, level: e.target.value })}
-                          className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-850 font-sans text-xs focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all"
+                          className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-850 font-sans text-xs focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all"
                         >
                           <option value="Beginner">Beginner (First Time)</option>
                           <option value="Intermediate">Intermediate (Paddling nicely)</option>
@@ -237,7 +237,7 @@ export default function Contact({ lang }: ContactProps) {
                         id="date"
                         value={formData.date}
                         onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all"
+                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all"
                       />
                     </div>
 
@@ -252,14 +252,14 @@ export default function Contact({ lang }: ContactProps) {
                         placeholder={lang === 'es' ? 'Cuéntanos si deseas material adaptado o tienes necesidades físicas...' : 'Let us know if you require adaptive gear or physical safety specifications...'}
                         value={formData.notes}
                         onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#38bdf8] focus:bg-white focus:outline-none transition-all resize-none placeholder-slate-400"
+                        className="px-4 py-3 bg-slate-50 border border-slate-200 rounded-none text-slate-800 font-sans text-sm focus:border-[#04f3af] focus:bg-white focus:outline-none transition-all resize-none placeholder-slate-400"
                       />
                     </div>
 
                     {/* Button trigger */}
                     <button
                       type="submit"
-                      className="w-full py-4 rounded-none bg-[#38bdf8] hover:bg-[#020617] text-white font-display font-medium text-xs tracking-widest uppercase transition-all flex items-center justify-center space-x-2 shadow-sm"
+                      className="w-full py-4 rounded-none bg-[#04f3af] hover:bg-[#020617] text-white font-display font-medium text-xs tracking-widest uppercase transition-all flex items-center justify-center space-x-2 shadow-sm"
                     >
                       <span>{current.formLabels.submit}</span>
                       <Send className="w-3.5 h-3.5" />
@@ -275,8 +275,8 @@ export default function Contact({ lang }: ContactProps) {
                     className="flex flex-col items-center justify-center text-center py-12"
                     id="success-form-payload"
                   >
-                    <div className="w-16 h-16 border-2 border-[#38bdf8] rounded-full flex items-center justify-center mb-6 animate-bounce">
-                      <CheckCircle2 className="w-10 h-10 text-[#38bdf8]" />
+                    <div className="w-16 h-16 border-2 border-[#04f3af] rounded-full flex items-center justify-center mb-6 animate-bounce">
+                      <CheckCircle2 className="w-10 h-10 text-[#04f3af]" />
                     </div>
 
                     <h3 className="font-display font-black text-2.5xl text-[#020617] mb-4 uppercase tracking-tight">
@@ -316,14 +316,14 @@ export default function Contact({ lang }: ContactProps) {
             <div className="p-8 md:p-10 rounded-none bg-slate-50 border border-slate-200 flex flex-col justify-between h-full relative overflow-hidden">
               
               {/* Outer Coordinates overlay */}
-              <div className="absolute top-4 right-4 z-20 font-mono text-[9px] text-[#38bdf8]/85 tracking-widest uppercase select-none">
+              <div className="absolute top-4 right-4 z-20 font-mono text-[9px] text-[#04f3af]/85 tracking-widest uppercase select-none">
                 {current.mapLabels.coordinates}
               </div>
 
               {/* Header metrics */}
               <div className="mb-6 relative z-10 text-left text-[#020617]">
                 <h3 className="font-display font-black text-xl mb-2 uppercase tracking-tight flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-[#38bdf8]" />
+                  <MapPin className="w-4 h-4 text-[#04f3af]" />
                   <span>{current.mapLabels.title}</span>
                 </h3>
                 <p className="font-sans text-xs text-slate-600 leading-relaxed font-light">
@@ -346,10 +346,10 @@ export default function Contact({ lang }: ContactProps) {
                 <div className="absolute bottom-0 inset-x-0 h-1/4 bg-amber-100/30 border-t border-slate-200" />
 
                 {/* romping waves animation pattern */}
-                <div className="absolute inset-x-0 bottom-1/4 h-8 bg-gradient-to-t from-[#38bdf8]/15 to-transparent flex items-center justify-around overflow-hidden pointer-events-none">
-                  <Waves className="w-4 h-4 text-[#38bdf8]/35 animate-pulse" />
-                  <Waves className="w-4 h-4 text-[#38bdf8]/35 animate-pulse delay-200" />
-                  <Waves className="w-4 h-4 text-[#38bdf8]/35 animate-pulse delay-500" />
+                <div className="absolute inset-x-0 bottom-1/4 h-8 bg-gradient-to-t from-[#04f3af]/15 to-transparent flex items-center justify-around overflow-hidden pointer-events-none">
+                  <Waves className="w-4 h-4 text-[#04f3af]/35 animate-pulse" />
+                  <Waves className="w-4 h-4 text-[#04f3af]/35 animate-pulse delay-200" />
+                  <Waves className="w-4 h-4 text-[#04f3af]/35 animate-pulse delay-500" />
                 </div>
 
                 {/* Coordinates targets hover pins */}
@@ -361,8 +361,8 @@ export default function Contact({ lang }: ContactProps) {
                       {current.mapLabels.spots.beach}
                     </span>
                     <span className="flex h-3.5 w-3.5 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#38bdf8] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#38bdf8] cursor-pointer"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#04f3af] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#04f3af] cursor-pointer"></span>
                     </span>
                   </div>
                 </div>
@@ -370,12 +370,12 @@ export default function Contact({ lang }: ContactProps) {
                 {/* Basecamp HQ Pin */}
                 <div className="absolute bottom-[15%] left-[25%] z-20 group/pin pointer-events-auto">
                   <div className="flex flex-col items-center">
-                    <span className="px-2.5 py-1 whitespace-nowrap bg-[#38bdf8] text-white font-mono text-[8px] font-bold uppercase rounded-none tracking-widest shadow opacity-0 group-hover/pin:opacity-100 transition-opacity translate-y-[-4px]">
+                    <span className="px-2.5 py-1 whitespace-nowrap bg-[#04f3af] text-white font-mono text-[8px] font-bold uppercase rounded-none tracking-widest shadow opacity-0 group-hover/pin:opacity-100 transition-opacity translate-y-[-4px]">
                       {current.mapLabels.spots.camp}
                     </span>
                     <span className="flex h-3.5 w-3.5 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#38bdf8] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#38bdf8] cursor-pointer"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#04f3af] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#04f3af] cursor-pointer"></span>
                     </span>
                   </div>
                 </div>
@@ -387,7 +387,7 @@ export default function Contact({ lang }: ContactProps) {
                       {current.mapLabels.spots.parking}
                     </span>
                     <span className="flex h-3.5 w-3.5 relative">
-                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#38bdf8]/50 cursor-pointer"></span>
+                      <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-[#04f3af]/50 cursor-pointer"></span>
                     </span>
                   </div>
                 </div>
@@ -403,24 +403,24 @@ export default function Contact({ lang }: ContactProps) {
               {/* Direct clickable address deck metrics */}
               <div className="mt-8 pt-6 border-t border-slate-200/80 space-y-4 text-left">
                 <div className="flex items-center space-x-3 text-sm text-slate-700">
-                  <Mail className="w-4 h-4 text-[#38bdf8] flex-shrink-0" />
-                  <a href="mailto:patrissurf@gmail.com" className="hover:text-[#38bdf8] transition-colors font-sans">
+                  <Mail className="w-4 h-4 text-[#04f3af] flex-shrink-0" />
+                  <a href="mailto:patrissurf@gmail.com" className="hover:text-[#04f3af] transition-colors font-sans">
                     patrissurf@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3 text-sm text-slate-700">
-                  <Phone className="w-4 h-4 text-[#38bdf8] flex-shrink-0" />
-                  <a href="tel:+34688734123" className="hover:text-[#38bdf8] transition-colors font-sans">
+                  <Phone className="w-4 h-4 text-[#04f3af] flex-shrink-0" />
+                  <a href="tel:+34688734123" className="hover:text-[#04f3af] transition-colors font-sans">
                     688 734 123
                   </a>
                 </div>
                 <div className="flex items-center space-x-3 text-sm text-slate-700">
-                  <Instagram className="w-4 h-4 text-[#38bdf8] flex-shrink-0" />
+                  <Instagram className="w-4 h-4 text-[#04f3af] flex-shrink-0" />
                   <a
                     href="https://www.instagram.com/patrissurf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#38bdf8] transition-colors font-sans"
+                    className="hover:text-[#04f3af] transition-colors font-sans"
                   >
                     @patrissurf
                   </a>

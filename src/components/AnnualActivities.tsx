@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Shield, Sparkles, Calendar, BookOpen, Compass } from 'lucide-react';
 
 interface AnnualActivitiesProps {
@@ -142,7 +143,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
         
         {/* Header Block */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="font-mono text-xs text-[#38bdf8] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -169,7 +170,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
                 {isActive && (
                   <motion.span
                     layoutId="activeAnnualTabBg"
-                    className="absolute inset-0 bg-[#38bdf8] rounded-none z-0"
+                    className="absolute inset-0 bg-[#04f3af] rounded-none z-0"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -191,7 +192,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             {/* Descriptive Content (Col 7) */}
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-slate-50 border border-slate-200 text-[#38bdf8]">
+                <div className="p-3 bg-slate-50 border border-slate-200 text-[#04f3af]">
                   <ActiveIcon className="w-6 h-6" />
                 </div>
                 <h3 className="font-display font-black text-xl sm:text-2xl text-[#020617] uppercase tracking-tight">
@@ -207,7 +208,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
               <div className="pt-4 space-y-3.5">
                 {activeProgram.details.map((detail, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#38bdf8] rounded-none mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-[#04f3af] rounded-none mt-2 shrink-0" />
                     <span className="font-sans text-xs sm:text-sm text-slate-500 font-light">
                       {detail}
                     </span>
@@ -217,13 +218,13 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
 
               {/* Pre-book anchor trigger */}
               <div className="pt-6">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 group text-xs font-mono font-bold tracking-widest text-[#38bdf8] uppercase hover:text-slate-800 transition-colors"
+                <Link
+                  to="/contacto"
+                  className="inline-flex items-center gap-2 group text-xs font-mono font-bold tracking-widest text-[#04f3af] uppercase hover:text-slate-800 transition-colors"
                 >
                   <span>{lang === 'es' ? 'CONTACTAR E INSCRIBIRSE' : 'GET IN TOUCH & ENROL'}</span>
-                  <span className="p-1 px-1.5 bg-slate-50 border border-slate-200 rounded-none group-hover:bg-[#38bdf8] group-hover:border-[#38bdf8] group-hover:text-white transition-colors">→</span>
-                </a>
+                  <span className="p-1 px-1.5 bg-slate-50 border border-slate-200 rounded-none group-hover:bg-[#04f3af] group-hover:border-[#04f3af] group-hover:text-white transition-colors">→</span>
+                </Link>
               </div>
             </div>
 
@@ -236,7 +237,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
                 className="w-full h-full object-cover filter grayscale-[10%]"
               />
               <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 bg-brand-navy border border-slate-800 rounded-none">
-                <Sparkles className="w-3.5 h-3.5 text-[#38bdf8]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#04f3af]" />
                 <span className="font-mono text-[9px] font-bold text-white uppercase tracking-wider">
                   {lang === 'es' ? 'MÉTODO DE CLUB' : 'CLUB METHODOLOGY'}
                 </span>

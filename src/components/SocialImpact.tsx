@@ -83,7 +83,7 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
         
         {/* Header Block */}
         <div className="max-w-4xl mb-20">
-          <span className="font-mono text-xs text-[#38bdf8] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl lg:text-6xl tracking-tight text-[#020617] mb-6 uppercase leading-none">
@@ -110,9 +110,9 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
             </p>
 
             {/* Quote Blockquote */}
-            <div className="pt-6 border-l-2 border-[#38bdf8] pl-6 italic font-serif text-slate-800 text-sm sm:text-base leading-relaxed">
+            <div className="pt-6 border-l-2 border-[#04f3af] pl-6 italic font-serif text-slate-800 text-sm sm:text-base leading-relaxed">
               <p>"{current.quote}"</p>
-              <span className="font-mono text-[9px] uppercase tracking-widest text-[#38bdf8] font-bold block mt-3">
+              <span className="font-mono text-[9px] uppercase tracking-widest text-[#04f3af] font-bold block mt-3">
                 — {current.quoteAuthor}
               </span>
             </div>
@@ -129,7 +129,7 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
             />
             
             {/* Stamp Badge */}
-            <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 bg-[#38bdf8] text-white border border-[#38bdf8]/20 rounded-none">
+            <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 bg-[#04f3af] text-white border border-[#04f3af]/20 rounded-none">
               <Sparkles className="w-3.5 h-3.5 text-white" />
               <span className="font-mono text-[8px] font-bold uppercase tracking-wider">
                 {lang === 'es' ? '100% ADAPTADO' : '100% ADAPTED'}
@@ -145,10 +145,10 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
             return (
               <div
                 key={idx}
-                className="p-8 rounded-none bg-white border border-slate-200 hover:border-[#38bdf8] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+                className="p-8 rounded-none bg-white border border-slate-200 hover:border-[#04f3af] shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-10 h-10 border border-dashed border-[#38bdf8]/50 flex items-center justify-center text-[#38bdf8] mb-6 rounded-none">
+                  <div className="w-10 h-10 border border-dashed border-[#04f3af]/50 flex items-center justify-center text-[#04f3af] mb-6 rounded-none">
                     <PillarIcon className="w-4 h-4" />
                   </div>
                   <h4 className="font-display font-black text-base text-[#020617] uppercase tracking-tight mb-3">

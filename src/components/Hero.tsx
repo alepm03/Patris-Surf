@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
   lang: 'es' | 'en';
@@ -44,13 +45,13 @@ export default function Hero({ lang }: HeroProps) {
         <img
           src="/2722903.jpg"
           alt=""
-          className="w-full h-full object-cover opacity-[0.90]"
+          className="w-full h-full object-cover opacity-[0.90] scale-x-[-1]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/60 to-[#ffffff]/20" />
       </div>
 
       {/* Floating accent light panels */}
-      <div className="absolute -bottom-20 -left-20 w-[45vw] h-[45vw] max-w-[500px] bg-[#38bdf8] blur-[140px] opacity-10 rounded-full pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-[45vw] h-[45vw] max-w-[500px] bg-[#04f3af] blur-[140px] opacity-10 rounded-full pointer-events-none" />
       <div className="absolute -top-20 -right-20 w-[35vw] h-[35vw] max-w-[400px] bg-slate-200 blur-[120px] opacity-25 rounded-full pointer-events-none" />
 
       {/* Hero Content */}
@@ -64,8 +65,8 @@ export default function Hero({ lang }: HeroProps) {
             transition={{ duration: 0.8 }}
             className="mb-6 flex items-center gap-4"
           >
-            <span className="h-[1px] w-12 bg-[#38bdf8]"></span>
-            <span className="text-[#38bdf8] text-[11px] font-mono font-bold uppercase tracking-[0.3em]">
+            <span className="h-[1px] w-12 bg-[#04f3af]"></span>
+            <span className="text-[#04f3af] text-[11px] font-mono font-bold uppercase tracking-[0.3em]">
               {current.tag}
             </span>
           </motion.div>
@@ -96,12 +97,12 @@ export default function Hero({ lang }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <a
-              href="#annual"
-              className="px-8 py-5 bg-[#38bdf8] text-white font-display font-medium uppercase tracking-widest text-xs rounded-none hover:bg-[#020617] transition-all duration-300 text-center shadow-sm inline-block"
+            <Link
+              to="/actividades"
+              className="px-8 py-5 bg-[#04f3af] text-white font-display font-medium uppercase tracking-widest text-xs rounded-none hover:bg-[#020617] transition-all duration-300 text-center shadow-sm inline-block"
             >
               {current.ctaPrimary}
-            </a>
+            </Link>
           </motion.div>
 
         </div>
@@ -129,7 +130,7 @@ export default function Hero({ lang }: HeroProps) {
           <div className="flex items-center gap-2 text-[10px]">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="uppercase tracking-widest text-[9px] text-[#020617]/40">{current.scroll}</span>
-            <ChevronDown className="w-4 h-4 text-[#38bdf8]" />
+            <ChevronDown className="w-4 h-4 text-[#04f3af]" />
           </div>
         </div>
       </div>

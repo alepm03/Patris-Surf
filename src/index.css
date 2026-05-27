@@ -9,10 +9,10 @@
 
   --color-brand-navy: #020617;
   --color-brand-blue-deep: #0c4a6e;
-  --color-brand-turquoise: #14b8a6;
-  --color-brand-cyan: #38bdf8;
+  --color-brand-turquoise: #04f3af;
+  --color-brand-cyan: #04f3af;
   --color-brand-sand: #faf6f0;
-  --color-brand-orange: #38bdf8;
+  --color-brand-orange: #04f3af;
   --color-brand-charcoal: #020617;
 }
 
@@ -28,15 +28,18 @@ html {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f8fafc;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;
+  background: #04f3af;
 }
 
 /* Ambient Grain Texture - Disabled for user comfort */
@@ -89,7 +92,27 @@ html {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Sponsor ticker marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

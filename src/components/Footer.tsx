@@ -67,7 +67,7 @@ export default function Footer({ lang }: FooterProps) {
     <footer className="relative bg-white border-t border-slate-100 pt-20 pb-12 overflow-hidden" id="footer-container">
       
       {/* Wave decoration on top of deck */}
-      <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#38bdf8]/15 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#04f3af]/15 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
@@ -80,7 +80,7 @@ export default function Footer({ lang }: FooterProps) {
               <Logo className="w-8.5 h-8.5" />
               <div className="flex flex-col text-left">
                 <span className="font-display font-black text-xl tracking-wider text-[#020617] uppercase leading-none">
-                  PATRIS <span className="text-[#38bdf8]">SURF</span>
+                  PATRIS <span className="text-[#04f3af]">SURF</span>
                 </span>
                 <span className="font-mono text-[8px] uppercase tracking-[0.25em] text-slate-400 -mt-0.5">
                   Playa de la Zurriola
@@ -98,7 +98,7 @@ export default function Footer({ lang }: FooterProps) {
                 href="https://www.instagram.com/patrissurf/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#38bdf8]/5 border border-slate-200 hover:border-[#38bdf8] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
+                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#04f3af]/5 border border-slate-200 hover:border-[#04f3af] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -107,7 +107,7 @@ export default function Footer({ lang }: FooterProps) {
                 href="https://www.facebook.com/Patris-Surf-1476020292661175/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#38bdf8]/5 border border-slate-200 hover:border-[#38bdf8] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
+                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#04f3af]/5 border border-slate-200 hover:border-[#04f3af] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -116,14 +116,14 @@ export default function Footer({ lang }: FooterProps) {
                 href="https://twitter.com/patrissurf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#38bdf8]/5 border border-slate-200 hover:border-[#38bdf8] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
+                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#04f3af]/5 border border-slate-200 hover:border-[#04f3af] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
                 aria-label="Twitter / X"
               >
                 <Twitter className="w-4 h-4" />
               </a>
               <a
                 href="mailto:patrissurf@gmail.com"
-                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#38bdf8]/5 border border-slate-200 hover:border-[#38bdf8] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
+                className="w-10 h-10 rounded-none bg-slate-50 hover:bg-[#04f3af]/5 border border-slate-200 hover:border-[#04f3af] flex items-center justify-center text-slate-500 hover:text-[#020617] transition-all"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
@@ -153,7 +153,7 @@ export default function Footer({ lang }: FooterProps) {
                 <li key={idx}>
                   <a
                     href={link.href}
-                    className="font-sans text-xs sm:text-sm text-slate-500 hover:text-[#38bdf8] transition-colors font-light"
+                    className="font-sans text-xs sm:text-sm text-slate-500 hover:text-[#04f3af] transition-colors font-light"
                   >
                     {link.label}
                   </a>
@@ -172,7 +172,7 @@ export default function Footer({ lang }: FooterProps) {
                 <li key={idx}>
                   <a
                     href={link.href}
-                    className="font-sans text-xs sm:text-sm text-slate-500 hover:text-[#38bdf8] transition-colors font-light"
+                    className="font-sans text-xs sm:text-sm text-slate-500 hover:text-[#04f3af] transition-colors font-light"
                   >
                     {link.label}
                   </a>
@@ -190,7 +190,7 @@ export default function Footer({ lang }: FooterProps) {
               © {new Date().getFullYear()} PATRIS SURF CLUB.
             </span>
             <span className="font-sans text-[11px] text-slate-500 font-light flex items-center gap-1.5">
-              <Heart className="w-3.5 h-3.5 text-[#38bdf8]" />
+              <Heart className="w-3.5 h-3.5 text-[#04f3af]" />
               {current.seal}
             </span>
           </div>
@@ -198,7 +198,7 @@ export default function Footer({ lang }: FooterProps) {
           {/* Scroll to top button trigger */}
           <button
             onClick={handleScrollTop}
-            className="group flex items-center space-x-2 px-5 py-3 rounded-none bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-[#38bdf8]/5 text-slate-500 hover:text-[#020617] font-mono text-[10px] uppercase tracking-widest transition-all"
+            className="group flex items-center space-x-2 px-5 py-3 rounded-none bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-[#04f3af]/5 text-slate-500 hover:text-[#020617] font-mono text-[10px] uppercase tracking-widest transition-all"
             aria-label="Scroll Top"
           >
             <span className="font-bold">{current.backTop}</span>
