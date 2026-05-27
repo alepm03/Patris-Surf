@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-navy: #020617;
+  --color-brand-blue-deep: #0c4a6e;
+  --color-brand-turquoise: #14b8a6;
+  --color-brand-cyan: #38bdf8;
+  --color-brand-sand: #faf6f0;
+  --color-brand-orange: #38bdf8;
+  --color-brand-charcoal: #020617;
+}
+
+/* Custom Utilities for cinematic rendering */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  background-color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Ambient Grain Texture - Disabled for user comfort */
+.grain-overlay {
+  display: none;
+}
+
+/* Geometric Balance Core Classes */
+.ocean-gradient {
+  background: radial-gradient(circle at 30% 20%, #eff6ff 0%, #ffffff 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px rgba(2, 6, 23, 0.35);
+  color: transparent;
+}
+
+.editorial-title {
+  font-size: clamp(3rem, 7vw, 5.25rem);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+/* Glassmorphism custom components */
+.glass-effect {
+  background: rgba(2, 6, 23, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Smooth motion card styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
