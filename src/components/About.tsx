@@ -75,12 +75,12 @@ export default function About({ lang }: AboutProps) {
 
           {/* Left Block: Imagery collage with raw linear/sharp styling */}
           <div className="lg:col-span-5 relative mt-12 lg:mt-0 order-last lg:order-first" id="about-imagery">
-            <div className="relative w-full max-w-[420px] mx-auto aspect-[3/4] select-none">
+            <div className="relative w-full max-w-[280px] mx-auto aspect-[9/16] select-none">
 
-              {/* Backing structural geometric line grid to enforce custom look */}
+              {/* Backing structural geometric line grid */}
               <div className="absolute -inset-4 border border-slate-200/50 rounded-none pointer-events-none" />
 
-              {/* Primary Image: Golden Hour Surf Lifestyle */}
+              {/* Video */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -88,27 +88,13 @@ export default function About({ lang }: AboutProps) {
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute inset-0 rounded-none overflow-hidden shadow-xl border border-slate-200"
               >
-                <img
-                  src="/Playa-Zurriola.jpg"
-                  alt="Patris Surfboards"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover grayscale-[20%] hover:scale-105 duration-700 hover:grayscale-0 transition-all"
-                />
-              </motion.div>
-
-              {/* Overlapping Floating Image 2: Intimate community/beach bonfire lifestyle */}
-              <motion.div
-                initial={{ opacity: 0, x: 30, y: 30 }}
-                whileInView={{ opacity: 0.95, x: 0, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute -bottom-8 -right-8 w-[65%] aspect-square rounded-none overflow-hidden shadow-xl border border-slate-200 z-10 hidden sm:block"
-              >
-                <img
-                  src="/IMG_5103-scaled.jpg"
-                  alt="Patris Surf Community campfire"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover hover:scale-110 duration-500 transition-transform"
+                <video
+                  src="/Video Project 1.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
                 />
               </motion.div>
 
