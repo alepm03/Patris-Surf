@@ -36,7 +36,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SUDADERAS',
           price: '50€',
           description: 'Sudadera Patris Surf en color gris. Cómoda y duradera para el día a día y la práctica deportiva.',
-          image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122257.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
@@ -45,7 +45,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SUDADERAS',
           price: '50€',
           description: 'Sudadera Patris Surf en color azul marino. El color representativo del club, ideal para lucir en el agua y fuera de ella.',
-          image: 'https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122311.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
@@ -54,7 +54,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SUDADERAS',
           price: '50€',
           description: 'Sudadera Patris Surf en color azul Bondi. Un tono vibrante que evoca el mar del Cantábrico.',
-          image: 'https://images.unsplash.com/photo-1489987707849-6d2b3e02f52e?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122324.png',
           sizes: ['S', 'M', 'L']
         },
         {
@@ -63,7 +63,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SUDADERAS',
           price: '50€',
           description: 'Sudadera con capucha Patris Surf en azul marino. Perfecta para los días frescos en la playa de la Zurriola.',
-          image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122339.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
@@ -72,7 +72,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'CAMISETAS',
           price: '25€',
           description: 'Camiseta Patris Surf en color blanco. Ligera y fresca para los días de playa y entrenamientos.',
-          image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122353.png',
           sizes: ['XS', 'S', 'M', 'L']
         },
         {
@@ -81,7 +81,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'CAMISETAS',
           price: '25€',
           description: 'Camiseta Patris Surf en color azul. Consulta tallas disponibles directamente por email antes de realizar el pedido.',
-          image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122411.png',
           sizes: ['Consultar']
         }
       ]
@@ -110,7 +110,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SWEATSHIRTS',
           price: '€50',
           description: 'Patris Surf sweatshirt in grey. Comfortable and durable for everyday use and sport.',
-          image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122257.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
@@ -119,7 +119,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SWEATSHIRTS',
           price: '€50',
           description: "Patris Surf sweatshirt in navy blue — the club's signature colour, perfect in and out of the water.",
-          image: 'https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122311.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
@@ -128,7 +128,7 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SWEATSHIRTS',
           price: '€50',
           description: 'Patris Surf sweatshirt in Bondi blue — a vibrant shade that echoes the Cantabrian Sea.',
-          image: 'https://images.unsplash.com/photo-1489987707849-6d2b3e02f52e?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122324.png',
           sizes: ['S', 'M', 'L']
         },
         {
@@ -137,25 +137,25 @@ export default function Shop({ lang }: ShopProps) {
           category: 'SWEATSHIRTS',
           price: '€50',
           description: 'Patris Surf hooded sweatshirt in navy blue. Perfect for cool days at La Zurriola beach.',
-          image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122335.png',
           sizes: ['XS', 'S', 'M', 'L', 'XL']
         },
         {
           id: 'camiseta-blanca',
           title: 'White T-Shirt',
           category: 'TEES',
-          price: '€25',
+          price: '25€',
           description: 'Patris Surf t-shirt in white. Light and fresh for beach days and training sessions.',
-          image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122353.png',
           sizes: ['XS', 'S', 'M', 'L']
         },
         {
           id: 'camiseta-azul',
           title: 'Blue T-Shirt',
           category: 'TEES',
-          price: '€25',
+          price: '25€',
           description: 'Patris Surf t-shirt in blue. Please check available sizes directly by email before ordering.',
-          image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80',
+          image: '/Captura de pantalla 2026-05-28 122411.png',
           sizes: ['Check sizes']
         }
       ]
@@ -177,7 +177,7 @@ export default function Shop({ lang }: ShopProps) {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[70vw] h-[70vw] rounded-full bg-slate-50/50 blur-[180px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Title Deck */}
         <div className="max-w-3xl mb-16 md:mb-20">
           <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
@@ -192,7 +192,7 @@ export default function Shop({ lang }: ShopProps) {
         </div>
 
         {/* Product Cards Block */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-16" id="apparel-grid-deck">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-16" id="apparel-grid-deck">
           {current.products.map((p) => {
             const isFav = favorites.includes(p.id);
             return (
@@ -201,7 +201,7 @@ export default function Shop({ lang }: ShopProps) {
                 className="group relative cursor-default flex flex-col justify-between h-full rounded-none bg-white border border-slate-200 hover:border-[#04f3af]/45 shadow-sm hover:shadow-md transition-all duration-500 overflow-hidden"
               >
                 {/* Image Container */}
-                <div className="relative aspect-[3/4] w-full overflow-hidden border-b border-slate-200">
+                <div className="relative aspect-square w-full overflow-hidden border-b border-slate-200">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
                   <img
                     src={p.image}
@@ -209,7 +209,7 @@ export default function Shop({ lang }: ShopProps) {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover filter grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out"
                   />
-                  
+
                   {/* Favourite heart clicker */}
                   <button
                     onClick={() => toggleFav(p.id)}
@@ -218,62 +218,62 @@ export default function Shop({ lang }: ShopProps) {
                   >
                     <Heart className={`w-4 h-4 ${isFav ? 'fill-[#04f3af] text-[#04f3af]' : 'text-slate-700 hover:text-slate-900'}`} />
                   </button>
- 
-                   {/* Category overlay */}
-                   <div className="absolute bottom-4 left-4 z-20">
-                     <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/20 uppercase">
-                       {p.category}
-                     </span>
-                   </div>
-                 </div>
- 
-                 {/* Content info block */}
-                 <div className="p-6 flex-grow flex flex-col justify-between">
-                   <div>
-                     <div className="flex justify-between items-start gap-4 mb-2">
-                       <h3 className="font-display font-black text-md sm:text-lg text-[#020617] group-hover:text-[#04f3af] transition-colors uppercase tracking-tight">
-                         {p.title}
-                       </h3>
-                       <span className="font-display font-black text-lg text-[#04f3af]">
-                         {p.price}
-                       </span>
-                     </div>
-                     <p className="font-sans text-xs text-slate-500 font-light leading-relaxed line-clamp-2">
-                       {p.description}
-                     </p>
-                   </div>
- 
-                   {/* Click detail trigger */}
-                   <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
-                     <button
-                       onClick={() => setSelectedProduct(p)}
-                       className="inline-flex items-center gap-1.5 text-[9px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#04f3af] transition-all uppercase"
-                     >
-                       <span>{current.ctaDetails}</span>
-                       <ArrowUpRight className="w-3.5 h-3.5" />
-                     </button>
- 
-                     <div className="flex gap-1.5">
-                       {p.sizes.map((s: string) => (
-                         <span key={s} className="w-6 h-6 border border-slate-200 rounded-none flex items-center justify-center font-mono text-[8px] text-slate-600 font-bold bg-slate-50">
-                           {s}
-                         </span>
-                       ))}
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             );
-           })}
-         </div>
- 
-         {/* View all button overlay */}
-         <div className="flex justify-center mt-6">
-           <a
-             href="mailto:patrissurf@gmail.com?subject=Pedido%20ropa"
-             className="px-8 py-4 bg-slate-50 border border-slate-200 hover:border-[#04f3af] text-slate-700 hover:text-[#020617] hover:bg-slate-100/50 hover:shadow-sm font-mono text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-2"
-           >
-             <ShoppingBag className="w-4 h-4 text-[#04f3af]" />
+
+                  {/* Category overlay */}
+                  <div className="absolute bottom-4 left-4 z-20">
+                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/20 uppercase">
+                      {p.category}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content info block */}
+                <div className="p-4 flex-grow flex flex-col justify-between">
+                  <div>
+                    <div className="flex justify-between items-start gap-4 mb-2">
+                      <h3 className="font-display font-black text-md sm:text-lg text-[#020617] group-hover:text-[#04f3af] transition-colors uppercase tracking-tight">
+                        {p.title}
+                      </h3>
+                      <span className="font-display font-black text-lg text-[#04f3af]">
+                        {p.price}
+                      </span>
+                    </div>
+                    <p className="font-sans text-xs text-slate-500 font-light leading-relaxed line-clamp-2">
+                      {p.description}
+                    </p>
+                  </div>
+
+                  {/* Click detail trigger */}
+                  <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <button
+                      onClick={() => setSelectedProduct(p)}
+                      className="inline-flex items-center gap-1.5 text-[9px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#04f3af] transition-all uppercase"
+                    >
+                      <span>{current.ctaDetails}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </button>
+
+                    <div className="flex gap-1.5">
+                      {p.sizes.map((s: string) => (
+                        <span key={s} className="w-6 h-6 border border-slate-200 rounded-none flex items-center justify-center font-mono text-[8px] text-slate-600 font-bold bg-slate-50">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* View all button overlay */}
+        <div className="flex justify-center mt-6">
+          <a
+            href="mailto:patrissurf@gmail.com?subject=Pedido%20ropa"
+            className="px-8 py-4 bg-slate-50 border border-slate-200 hover:border-[#04f3af] text-slate-700 hover:text-[#020617] hover:bg-slate-100/50 hover:shadow-sm font-mono text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-2"
+          >
+            <ShoppingBag className="w-4 h-4 text-[#04f3af]" />
             <span>{current.viewAllBtn}</span>
           </a>
         </div>
@@ -309,7 +309,7 @@ export default function Shop({ lang }: ShopProps) {
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover filter grayscale-[10%]"
                 />
-                
+
                 {/* Category tag bubble */}
                 <div className="absolute top-4 left-4">
                   <span className="px-2 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/30 uppercase">
@@ -339,11 +339,11 @@ export default function Shop({ lang }: ShopProps) {
                       {current.modalSizeLabel}
                     </span>
                     <div className="flex gap-2">
-                       {selectedProduct.sizes.map((s: string) => (
-                         <span key={s} className="px-3 py-1 bg-slate-50 border border-slate-200 rounded-none font-mono text-[10px] text-slate-700 font-bold">
-                           {s}
-                         </span>
-                       ))}
+                      {selectedProduct.sizes.map((s: string) => (
+                        <span key={s} className="px-3 py-1 bg-slate-50 border border-slate-200 rounded-none font-mono text-[10px] text-slate-700 font-bold">
+                          {s}
+                        </span>
+                      ))}
                     </div>
                   </div>
 

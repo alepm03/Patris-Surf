@@ -39,7 +39,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             'Monitores formados en educación social, socorrismo y surf adaptado.',
             'Material deportivo y equipamiento completo proporcionado por el club.'
           ],
-          image: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80',
+          image: '/IMG_5103-scaled.jpg',
           icon: Shield
         },
         {
@@ -52,7 +52,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             'Acceso a las instalaciones del Club con derecho de uso.',
             'Ambiente amigable y familiar en el corazón de Donostia.'
           ],
-          image: 'https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=1200&q=80',
+          image: '/pexels-chelsey-horne-757133-scaled.jpg',
           icon: BookOpen
         },
         {
@@ -98,7 +98,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             'Instructors trained in social education, lifeguarding, and adaptive surfing.',
             'All sports equipment and gear provided by the club.'
           ],
-          image: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80',
+          image: '/IMG_5103-scaled.jpg',
           icon: Shield
         },
         {
@@ -111,7 +111,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             'Access to the Club\'s facilities with right of use.',
             'Friendly and family atmosphere in the heart of Donostia.'
           ],
-          image: 'https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=1200&q=80',
+          image: '/pexels-chelsey-horne-757133-scaled.jpg',
           icon: BookOpen
         },
         {
@@ -140,7 +140,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
       <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 via-transparent to-slate-50/50 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Header Block */}
         <div className="max-w-3xl mb-16 md:mb-20">
           <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
@@ -162,9 +162,8 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`px-5 py-3 rounded-none font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 relative ${
-                  isActive ? 'text-white' : 'text-slate-500 hover:text-slate-900'
-                }`}
+                className={`px-5 py-3 rounded-none font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 relative ${isActive ? 'text-white' : 'text-slate-500 hover:text-slate-900'
+                  }`}
               >
                 <span className="relative z-10">{tab.label}</span>
                 {isActive && (

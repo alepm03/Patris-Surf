@@ -75,7 +75,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gallery-4',
-    imageUrl: 'https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/pexels-chelsey-horne-757133-scaled.jpg',
     caption: 'Handcrafted surfboards representing freedom, craft, and soul.',
     category: 'lifestyle',
     aspectRatio: 'aspect-[3/4]'

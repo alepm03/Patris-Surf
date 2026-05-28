@@ -63,23 +63,23 @@ export default function About({ lang }: AboutProps) {
 
   return (
     <section id="about" className="relative py-24 md:py-32 bg-[#ffffff] overflow-hidden">
-      
+
       {/* Abstract Glowing Accent Lights */}
       <div className="absolute top-1/3 right-0 w-[30vw] h-[30vw] rounded-full bg-sky-100/40 blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 left-0 w-[25vw] h-[25vw] rounded-full bg-slate-100/30 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Split Section Layout: Visual Storytelling */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
-          
+
           {/* Left Block: Imagery collage with raw linear/sharp styling */}
           <div className="lg:col-span-5 relative mt-12 lg:mt-0 order-last lg:order-first" id="about-imagery">
             <div className="relative w-full max-w-[420px] mx-auto aspect-[3/4] select-none">
-              
+
               {/* Backing structural geometric line grid to enforce custom look */}
               <div className="absolute -inset-4 border border-slate-200/50 rounded-none pointer-events-none" />
-              
+
               {/* Primary Image: Golden Hour Surf Lifestyle */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -89,7 +89,7 @@ export default function About({ lang }: AboutProps) {
                 className="absolute inset-0 rounded-none overflow-hidden shadow-xl border border-slate-200"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=800&q=80"
+                  src="/Playa-Zurriola.jpg"
                   alt="Patris Surfboards"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale-[20%] hover:scale-105 duration-700 hover:grayscale-0 transition-all"
@@ -105,7 +105,7 @@ export default function About({ lang }: AboutProps) {
                 className="absolute -bottom-8 -right-8 w-[65%] aspect-square rounded-none overflow-hidden shadow-xl border border-slate-200 z-10 hidden sm:block"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=600&q=80"
+                  src="/IMG_5103-scaled.jpg"
                   alt="Patris Surf Community campfire"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover hover:scale-110 duration-500 transition-transform"
@@ -128,7 +128,7 @@ export default function About({ lang }: AboutProps) {
 
           {/* Right Block: Content area */}
           <div className="lg:col-span-7 flex flex-col justify-center text-left">
-            
+
             {/* Header Track */}
             <span className="font-mono text-xs text-[#04f3af] font-semibold tracking-[0.3em] uppercase mb-4 block">
               {current.sectionTitle}

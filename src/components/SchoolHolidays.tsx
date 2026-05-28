@@ -22,7 +22,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Actividades de Conciliación en Vacaciones',
           description: 'Colonias juveniles planificadas para las vacaciones escolares de navidad, semana santa y verano, con actividades deportivas, culturales, medioambientales y de ocio en San Sebastián.',
           perks: ['Lunes a viernes, 9:00 a 13:00', 'Navidad, Semana Santa y Verano', 'Actividades deportivas y culturales', 'Material incluido'],
-          image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121506.png',
           accent: 'Navidad · Semana Santa · Verano'
         },
         {
@@ -31,7 +31,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Cursillos Semanales de Surf',
           description: 'Cursillos de una hora y media con todo el material incluido. Iniciación y perfeccionamiento durante las vacaciones escolares en la Zurriola. Inscripciones en Donostia Kirola (verano) o por correo electrónico.',
           perks: ['1h 30min por sesión', 'Horarios: 9:30 / 11:30 / 16:00', 'Todo el material incluido', 'Iniciación y perfeccionamiento'],
-          image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121407.png',
           accent: 'Vacaciones escolares'
         },
         {
@@ -40,7 +40,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Cursillo Surf & Surf Skate',
           description: 'Cursos semanales de 3 horas combinando surf y surf skate. Una experiencia completa para aprender a dominar el deslizamiento dentro y fuera del agua. Material incluido.',
           perks: ['Lunes a viernes, 10:00 a 13:00', '3 horas de duración diaria', 'Surf + Surf Skate combinados', 'Material incluido'],
-          image: 'https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121350.png',
           accent: 'Vacaciones escolares'
         }
       ],
@@ -57,7 +57,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Holiday Conciliation Activities',
           description: 'Youth camps planned for Christmas, Easter, and summer school holidays, featuring sports, cultural, environmental, and leisure activities in San Sebastián.',
           perks: ['Monday to Friday, 9:00 to 13:00', 'Christmas, Easter & Summer', 'Sports and cultural activities', 'All materials included'],
-          image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121506.png',
           accent: 'Christmas · Easter · Summer'
         },
         {
@@ -66,7 +66,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Weekly Surf Courses',
           description: 'One and a half hour sessions with all equipment included. Beginner and intermediate levels during school holidays at La Zurriola. Registration via Donostia Kirola (summer) or by email.',
           perks: ['1h 30min per session', 'Timetables: 9:30 / 11:30 / 16:00', 'All equipment included', 'Beginner & intermediate'],
-          image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121407.png',
           accent: 'School holidays'
         },
         {
@@ -75,7 +75,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           title: 'Surf & Surf Skate Course',
           description: 'Weekly 3-hour courses combining surfing and surf skating. A complete experience to master the slide in and out of the water. All equipment included.',
           perks: ['Monday to Friday, 10:00 to 13:00', '3 hours per day', 'Surf + Surf Skate combined', 'All materials included'],
-          image: 'https://images.unsplash.com/photo-1533007424151-54c7d6d5ef76?auto=format&fit=crop&w=1200&q=80',
+          image: '/Captura de pantalla 2026-05-28 121350.png',
           accent: 'School holidays'
         }
       ],
@@ -90,7 +90,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
       <div className="absolute top-1/4 right-0 w-[50vw] h-[50vw] rounded-full bg-slate-100/30 blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Title Track */}
         <div className="max-w-3xl mb-16 md:mb-20">
           <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
@@ -124,11 +124,6 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                   />
-                  <div className="absolute top-4 left-4 z-20">
-                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-white bg-slate-900 border border-slate-800 uppercase">
-                      {card.badge}
-                    </span>
-                  </div>
                   <div className="absolute bottom-4 right-4 z-20">
                     <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/20 uppercase">
                       {card.accent}

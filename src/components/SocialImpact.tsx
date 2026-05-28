@@ -80,7 +80,7 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
       <div className="absolute top-1/2 left-1/4 w-[45vw] h-[45vw] rounded-full bg-slate-50/50 blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Header Block */}
         <div className="max-w-4xl mb-20">
           <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
@@ -96,7 +96,7 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
 
         {/* Documentary split layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center border-b border-slate-100 pb-20">
-          
+
           {/* Left storytelling col (Col 6) */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="font-display font-black text-xl sm:text-2xl text-[#020617] uppercase tracking-tight">
@@ -122,12 +122,12 @@ export default function SocialImpact({ lang }: SocialImpactProps) {
           <div className="lg:col-span-6 relative aspect-[4/3] w-full max-w-[500px] mx-auto overflow-hidden border border-slate-200 shadow-sm group">
             <div className="absolute inset-0 bg-slate-900/10 z-10 transition-colors duration-500 group-hover:bg-transparent" />
             <img
-              src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80"
+              src="/IMG_5103-scaled.jpg"
               alt="Community adaptive surfing inclusion"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover filter grayscale-[10%]"
             />
-            
+
             {/* Stamp Badge */}
             <div className="absolute bottom-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 bg-[#04f3af] text-white border border-[#04f3af]/20 rounded-none">
               <Sparkles className="w-3.5 h-3.5 text-white" />

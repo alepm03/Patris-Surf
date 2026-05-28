@@ -25,18 +25,18 @@ export default function Navbar() {
 
   const navLinks = {
     es: [
-      { path: '/',            label: 'Inicio' },
+      { path: '/', label: 'Inicio' },
       { path: '/actividades', label: 'Actividades' },
-      { path: '/ropa',        label: 'Ropa' },
-      { path: '/lifestyle',   label: 'Lifestyle' },
-      { path: '/contacto',    label: 'Contacto' },
+      { path: '/ropa', label: 'Ropa' },
+      { path: '/lifestyle', label: 'Lifestyle' },
+      { path: '/contacto', label: 'Contacto' },
     ],
     en: [
-      { path: '/',            label: 'Home' },
+      { path: '/', label: 'Home' },
       { path: '/actividades', label: 'Activities' },
-      { path: '/ropa',        label: 'Shop' },
-      { path: '/lifestyle',   label: 'Lifestyle' },
-      { path: '/contacto',    label: 'Contact' },
+      { path: '/ropa', label: 'Shop' },
+      { path: '/lifestyle', label: 'Lifestyle' },
+      { path: '/contacto', label: 'Contact' },
     ],
   };
 
@@ -51,11 +51,10 @@ export default function Navbar() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
             ? 'py-4 bg-white/95 backdrop-blur-md border-b border-slate-200/50 shadow-sm'
             : 'py-6 bg-transparent border-b border-transparent'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
@@ -66,7 +65,7 @@ export default function Navbar() {
                 PATRIS <span className="text-[#04f3af]">SURF</span>
               </span>
               <span className="font-mono text-[8.5px] uppercase tracking-[0.25em] -mt-0.5 text-slate-500">
-                Playa de la Zurriola
+                Surfing the system
               </span>
             </div>
           </Link>
@@ -80,9 +79,8 @@ export default function Navbar() {
                   <li key={link.path} className="relative">
                     <Link
                       to={link.path}
-                      className={`font-sans text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-350 relative py-1 ${
-                        active ? 'text-[#04f3af]' : 'text-slate-600 hover:text-[#020617]'
-                      }`}
+                      className={`font-sans text-[11px] uppercase tracking-[0.2em] font-bold transition-all duration-350 relative py-1 ${active ? 'text-[#04f3af]' : 'text-slate-600 hover:text-[#020617]'
+                        }`}
                     >
                       {link.label}
                       {active && (
@@ -104,9 +102,8 @@ export default function Navbar() {
                 <button
                   key={l}
                   onClick={() => setLang(l)}
-                  className={`text-[10px] font-mono font-bold tracking-widest px-2 py-1 rounded-none transition-all ${
-                    lang === l ? 'bg-[#04f3af] text-white' : 'text-slate-400 hover:text-slate-800'
-                  }`}
+                  className={`text-[10px] font-mono font-bold tracking-widest px-2 py-1 rounded-none transition-all ${lang === l ? 'bg-[#04f3af] text-white' : 'text-slate-400 hover:text-slate-800'
+                    }`}
                 >
                   {l.toUpperCase()}
                 </button>
@@ -126,21 +123,19 @@ export default function Navbar() {
           <div className="flex items-center space-x-4 md:hidden relative z-50">
             <button
               onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
-              className={`text-xs font-mono rounded px-2.5 py-1.5 border transition-all ${
-                isOpen
+              className={`text-xs font-mono rounded px-2.5 py-1.5 border transition-all ${isOpen
                   ? 'text-white/70 border-white/20 hover:border-[#04f3af] hover:text-[#04f3af]'
                   : 'text-slate-600 border-slate-200 hover:border-[#04f3af] hover:text-[#04f3af] bg-white/80'
-              }`}
+                }`}
             >
               {lang === 'es' ? 'EN' : 'ES'}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-1.5 rounded-none transition-colors focus:outline-none ${
-                isOpen
+              className={`p-1.5 rounded-none transition-colors focus:outline-none ${isOpen
                   ? 'text-white hover:bg-white/5'
                   : 'text-slate-800 hover:text-[#04f3af] hover:bg-slate-100/50'
-              }`}
+                }`}
               aria-label="Toggle Menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -187,9 +182,8 @@ export default function Navbar() {
                   >
                     <Link
                       to={link.path}
-                      className={`font-display font-black text-2xl tracking-widest uppercase transition-colors ${
-                        isActive(link.path) ? 'text-[#04f3af]' : 'text-white hover:text-[#04f3af]'
-                      }`}
+                      className={`font-display font-black text-2xl tracking-widest uppercase transition-colors ${isActive(link.path) ? 'text-[#04f3af]' : 'text-white hover:text-[#04f3af]'
+                        }`}
                     >
                       {link.label}
                     </Link>
