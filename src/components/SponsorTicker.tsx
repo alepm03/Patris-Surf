@@ -23,7 +23,7 @@ export default function SponsorTicker() {
                 {s.name}
               </span>
             </div>
-            <span className="text-[#04f3af] text-xs font-mono opacity-40">·</span>
+            <span className="text-[#3de5bd] text-xs font-mono opacity-40">·</span>
           </div>
         ))}
       </div>

@@ -64,9 +64,9 @@ export default function About({ lang }: AboutProps) {
   return (
     <section id="about" className="relative py-24 md:py-32 bg-[#ffffff] overflow-hidden">
 
-      {/* Abstract Glowing Accent Lights */}
-      <div className="absolute top-1/3 right-0 w-[30vw] h-[30vw] rounded-full bg-sky-100/40 blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-[25vw] h-[25vw] rounded-full bg-slate-100/30 blur-[120px] pointer-events-none" />
+      {/* Abstract Glowing Accent Lights — corporate mint palette */}
+      <div className="absolute top-1/3 right-0 w-[30vw] h-[30vw] rounded-full bg-[#cdefe4]/50 blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 left-0 w-[25vw] h-[25vw] rounded-full bg-[#cdefe4]/30 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
@@ -104,9 +104,9 @@ export default function About({ lang }: AboutProps) {
                 whileInView={{ opacity: 1, rotate: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="absolute -top-6 -left-6 px-5 py-3 rounded-none bg-[#04f3af] text-white font-display font-medium text-xs tracking-widest uppercase shadow-xl z-20 hidden sm:flex items-center space-x-2"
+                className="absolute -top-6 -left-6 px-5 py-3 rounded-none bg-[#3de5bd] text-[#020617] font-display font-medium text-xs tracking-widest uppercase shadow-xl z-20 hidden sm:flex items-center space-x-2"
               >
-                <Sparkles className="w-3.5 h-3.5 text-white" />
+                <Sparkles className="w-3.5 h-3.5 text-[#020617]" />
                 <span>Est. 2014</span>
               </motion.div>
             </div>
@@ -116,7 +116,7 @@ export default function About({ lang }: AboutProps) {
           <div className="lg:col-span-7 flex flex-col justify-center text-left">
 
             {/* Header Track */}
-            <span className="font-mono text-xs text-[#04f3af] font-semibold tracking-[0.3em] uppercase mb-4 block">
+            <span className="font-mono text-xs text-[#3de5bd] font-semibold tracking-[0.3em] uppercase mb-4 block">
               {current.sectionTitle}
             </span>
 
@@ -133,7 +133,7 @@ export default function About({ lang }: AboutProps) {
             {/* Editorial blockquote */}
             <motion.div
               initial={{ borderLeftColor: 'rgba(0,0,0,0.05)' }}
-              whileInView={{ borderLeftColor: '#04f3af' }}
+              whileInView={{ borderLeftColor: '#3de5bd' }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
               className="border-l-[3px] pl-6 py-1 mb-6"
@@ -141,7 +141,7 @@ export default function About({ lang }: AboutProps) {
               <p className="font-serif italic text-lg md:text-xl text-slate-800 font-medium leading-relaxed mb-3">
                 {current.quote}
               </p>
-              <span className="font-sans text-[11px] uppercase tracking-widest text-[#04f3af] font-bold block">
+              <span className="font-sans text-[11px] uppercase tracking-widest text-[#3de5bd] font-bold block">
                 — {current.quoteAuthor}
               </span>
             </motion.div>
@@ -150,31 +150,122 @@ export default function About({ lang }: AboutProps) {
 
         </div>
 
-        {/* Feature/Core Values Horizontal bento-like listing */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24 border-t border-slate-100 pt-16" id="about-values">
-          {current.values.map((val, i) => {
-            const IconComponent = val.icon;
-            return (
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.8, delay: i * 0.15 }}
-                key={i}
-                className="p-8 rounded-none bg-white border border-slate-100 shadow-sm hover:border-[#04f3af]/40 hover:shadow-md transition-all duration-300 group text-left"
-              >
-                <div className="h-10 w-10 border border-[#04f3af] flex items-center justify-center mb-6 group-hover:bg-[#04f3af] group-hover:text-white text-[#04f3af] transition-colors rounded-none">
-                  <IconComponent className="w-5 h-5" />
+        {/* ===== ASYMMETRIC PHOTO BENTO — Values ===== */}
+        <div className="mt-24 border-t border-slate-100 pt-16" id="about-values">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:h-[560px]">
+
+            {/* ── Card 1: LARGE (2 cols) — Integración Social ── */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.9 }}
+              className="md:col-span-2 relative overflow-hidden group cursor-default min-h-[300px] md:h-full"
+            >
+              <img
+                src="/IMG_5103-scaled.jpg"
+                alt={current.values[0].title}
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+              />
+              {/* Dark gradient layers */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/50 to-[#020617]/10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#020617]/25 to-transparent" />
+              {/* Mint accent lines */}
+              <div className="absolute top-0 right-0 w-[2px] h-24 bg-[#3de5bd]" />
+              <div className="absolute bottom-0 left-0 w-24 h-[2px] bg-[#3de5bd]/50" />
+
+              <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="font-mono text-[10px] text-[#3de5bd] font-bold tracking-[0.4em] uppercase">01</span>
+                  <div className="h-8 w-8 border border-[#3de5bd]/60 flex items-center justify-center text-[#3de5bd]">
+                    <Heart className="w-4 h-4" />
+                  </div>
                 </div>
-                <h3 className="font-display font-bold text-lg text-slate-900 mb-3">
-                  {val.title}
-                </h3>
-                <p className="font-sans text-xs md:text-sm text-slate-500 font-light leading-relaxed">
-                  {val.desc}
-                </p>
+                <div>
+                  <h3 className="font-display font-black text-3xl md:text-4xl text-white uppercase tracking-tight leading-none mb-4">
+                    {current.values[0].title}
+                  </h3>
+                  <p className="font-sans text-sm text-white/75 md:opacity-0 md:group-hover:opacity-100 font-light leading-relaxed max-w-md md:translate-y-3 md:group-hover:translate-y-0 transition-all duration-500">
+                    {current.values[0].desc}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* ── Right column: two stacked cards ── */}
+            <div className="md:col-span-1 flex flex-col gap-2">
+
+              {/* Card 2 — Deporte y Salud */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9, delay: 0.15 }}
+                className="flex-1 relative overflow-hidden group cursor-default min-h-[220px]"
+              >
+                <img
+                  src="/pexels-chelsey-horne-757133-scaled.jpg"
+                  alt={current.values[1].title}
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/95 via-[#020617]/40 to-transparent" />
+
+                <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-[10px] text-[#3de5bd] font-bold tracking-[0.4em]">02</span>
+                    <div className="h-7 w-7 border border-[#3de5bd]/60 flex items-center justify-center text-[#3de5bd]">
+                      <Users className="w-3.5 h-3.5" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-display font-black text-xl text-white uppercase tracking-tight leading-none mb-2">
+                      {current.values[1].title}
+                    </h3>
+                    <p className="font-sans text-xs text-white/70 md:opacity-0 md:group-hover:opacity-100 font-light leading-relaxed md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-500">
+                      {current.values[1].desc}
+                    </p>
+                  </div>
+                </div>
               </motion.div>
-            );
-          })}
+
+              {/* Card 3 — Conciencia Ambiental */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9, delay: 0.3 }}
+                className="flex-1 relative overflow-hidden group cursor-default min-h-[220px]"
+              >
+                <img
+                  src="/Playa-Zurriola.jpg"
+                  alt={current.values[2].title}
+                  className="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/95 via-[#020617]/40 to-transparent" />
+                {/* Subtle mint tint */}
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[#3de5bd]/8" />
+                <div className="absolute top-0 left-0 w-12 h-[2px] bg-[#3de5bd]" />
+
+                <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="font-mono text-[10px] text-[#3de5bd] font-bold tracking-[0.4em]">03</span>
+                    <div className="h-7 w-7 border border-[#3de5bd]/60 flex items-center justify-center text-[#3de5bd]">
+                      <Earth className="w-3.5 h-3.5" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-display font-black text-xl text-white uppercase tracking-tight leading-none mb-2">
+                      {current.values[2].title}
+                    </h3>
+                    <p className="font-sans text-xs text-white/70 md:opacity-0 md:group-hover:opacity-100 font-light leading-relaxed md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-500">
+                      {current.values[2].desc}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+            </div>
+          </div>
         </div>
 
       </div>

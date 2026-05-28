@@ -93,7 +93,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
 
         {/* Title Track */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#3de5bd] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -113,7 +113,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                 key={card.id}
                 onMouseEnter={() => setHoveredIdx(idx)}
                 onMouseLeave={() => setHoveredIdx(null)}
-                className="group relative flex flex-col justify-between h-full rounded-none bg-white border border-slate-200 shadow-sm hover:border-[#04f3af]/55 hover:shadow-md transition-all duration-500 overflow-hidden"
+                className="group relative flex flex-col justify-between h-full rounded-none bg-white border border-slate-200 shadow-sm hover:border-[#3de5bd]/55 hover:shadow-md transition-all duration-500 overflow-hidden"
               >
                 {/* Image background aspect */}
                 <div className="relative aspect-[3/2] w-full overflow-hidden border-b border-slate-200">
@@ -125,7 +125,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                     className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                   />
                   <div className="absolute bottom-4 right-4 z-20">
-                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/20 uppercase">
+                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#3de5bd] bg-white border border-[#3de5bd]/20 uppercase">
                       {card.accent}
                     </span>
                   </div>
@@ -134,7 +134,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                 {/* Content body */}
                 <div className="p-6 flex-grow flex flex-col justify-between">
                   <div>
-                    <h3 className="font-display font-black text-lg sm:text-xl text-[#020617] uppercase tracking-tight mb-3 group-hover:text-[#04f3af] transition-colors">
+                    <h3 className="font-display font-black text-lg sm:text-xl text-[#020617] uppercase tracking-tight mb-3 group-hover:text-[#3de5bd] transition-colors">
                       {card.title}
                     </h3>
                     <p className="font-sans text-xs text-slate-500 font-light leading-relaxed mb-6">
@@ -146,7 +146,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                   <div className="space-y-2 border-t border-slate-100 pt-4">
                     {card.perks.map((perk, pIdx) => (
                       <div key={pIdx} className="flex items-center gap-2">
-                        <Smile className="w-3.5 h-3.5 text-[#04f3af] shrink-0" />
+                        <Smile className="w-3.5 h-3.5 text-[#3de5bd] shrink-0" />
                         <span className="font-sans text-[11px] text-slate-600 font-medium">
                           {perk}
                         </span>
@@ -157,7 +157,7 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
                   <div className="mt-8 pt-4 border-t border-slate-100">
                     <Link
                       to="/contacto"
-                      className="inline-flex items-center gap-2 text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#04f3af] transition-colors uppercase"
+                      className="inline-flex items-center gap-2 text-[10px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#3de5bd] transition-colors uppercase"
                     >
                       <span>{lang === 'es' ? 'Consultar plazas' : 'Check availability'}</span>
                       <Compass className="w-3.5 h-3.5 transform group-hover:rotate-45 transition-transform animate-pulse" />
@@ -175,8 +175,8 @@ export default function SchoolHolidays({ lang }: SchoolHolidaysProps) {
           whileInView={{ opacity: 1 }}
           className="mt-12 text-center text-[10px] sm:text-xs font-mono tracking-widest text-slate-600 flex items-center justify-center gap-2.5 border border-slate-200/60 py-5 px-6 bg-slate-50"
         >
-          <div className="w-5 h-5 bg-[#04f3af]/10 border border-[#04f3af] rounded-none flex items-center justify-center">
-            <Sun className="w-3 h-3 text-[#04f3af] animate-spin" />
+          <div className="w-5 h-5 bg-[#3de5bd]/10 border border-[#3de5bd] rounded-none flex items-center justify-center">
+            <Sun className="w-3 h-3 text-[#3de5bd] animate-spin" />
           </div>
           <span className="uppercase leading-relaxed">{current.coexistencePromise}</span>
         </motion.div>

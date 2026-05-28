@@ -45,14 +45,16 @@ export default function Hero({ lang }: HeroProps) {
         <img
           src="/2722903.jpg"
           alt=""
-          className="w-full h-full object-cover opacity-[0.90] scale-x-[-1]"
+          className="w-full h-full object-cover opacity-[0.85] scale-x-[-1]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/60 to-[#ffffff]/20" />
+        {/* Refined gradient: less white-washout, preserves image drama */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#ffffff]/80 via-[#ffffff]/30 to-transparent" />
       </div>
 
       {/* Floating accent light panels */}
-      <div className="absolute -bottom-20 -left-20 w-[45vw] h-[45vw] max-w-[500px] bg-[#04f3af] blur-[140px] opacity-10 rounded-full pointer-events-none" />
-      <div className="absolute -top-20 -right-20 w-[35vw] h-[35vw] max-w-[400px] bg-slate-200 blur-[120px] opacity-25 rounded-full pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-[45vw] h-[45vw] max-w-[500px] bg-[#3de5bd] blur-[140px] opacity-18 rounded-full pointer-events-none" />
+      <div className="absolute -top-20 -right-20 w-[35vw] h-[35vw] max-w-[400px] bg-[#cdefe4] blur-[120px] opacity-30 rounded-full pointer-events-none" />
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 w-full min-h-screen flex flex-col justify-center">
@@ -65,8 +67,8 @@ export default function Hero({ lang }: HeroProps) {
             transition={{ duration: 0.8 }}
             className="mb-6 flex items-center gap-4"
           >
-            <span className="h-[1px] w-12 bg-[#04f3af]"></span>
-            <span className="text-[#04f3af] text-[11px] font-mono font-bold uppercase tracking-[0.3em]">
+            <span className="h-[1px] w-12 bg-[#3de5bd]"></span>
+            <span className="text-[#3de5bd] text-[11px] font-mono font-bold uppercase tracking-[0.3em]">
               {current.tag}
             </span>
           </motion.div>
@@ -99,7 +101,7 @@ export default function Hero({ lang }: HeroProps) {
           >
             <Link
               to="/actividades"
-              className="px-8 py-5 bg-[#04f3af] text-white font-display font-medium uppercase tracking-widest text-xs rounded-none hover:bg-[#020617] transition-all duration-300 text-center shadow-sm inline-block"
+              className="px-8 py-5 bg-[#3de5bd] text-[#020617] font-display font-medium uppercase tracking-widest text-xs rounded-none hover:bg-[#020617] hover:text-white transition-all duration-300 text-center shadow-sm inline-block"
             >
               {current.ctaPrimary}
             </Link>
@@ -108,8 +110,23 @@ export default function Hero({ lang }: HeroProps) {
         </div>
       </div>
 
+      {/* Wave divider — smooth organic transition to next section */}
+      <div className="absolute bottom-[56px] sm:bottom-[57px] inset-x-0 overflow-hidden z-15 pointer-events-none leading-none">
+        <svg viewBox="0 0 1440 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block" preserveAspectRatio="none">
+          <path
+            d="M0,28 C180,50 360,8 540,28 C720,48 900,10 1080,28 C1260,46 1350,22 1440,28 L1440,56 L0,56 Z"
+            fill="#f8fafc"
+            fillOpacity="0.6"
+          />
+          <path
+            d="M0,36 C240,14 480,52 720,36 C960,20 1200,50 1440,36 L1440,56 L0,56 Z"
+            fill="#f8fafc"
+          />
+        </svg>
+      </div>
+
       {/* Micro Metrics Horizontal Bar at very bottom */}
-      <div className="absolute bottom-0 inset-x-0 bg-slate-50 border-t border-slate-200/80 backdrop-blur-sm z-20 py-4 hidden sm:block">
+      <div className="absolute bottom-0 inset-x-0 bg-[#cdefe4]/20 border-t border-[#3de5bd]/20 backdrop-blur-sm z-20 py-4 hidden sm:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-xs font-mono text-slate-500">
           <div className="flex items-center gap-8">
             <div>
@@ -128,9 +145,9 @@ export default function Hero({ lang }: HeroProps) {
             </div>
           </div>
           <div className="flex items-center gap-2 text-[10px]">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#3de5bd] animate-pulse"></span>
             <span className="uppercase tracking-widest text-[9px] text-[#020617]/40">{current.scroll}</span>
-            <ChevronDown className="w-4 h-4 text-[#04f3af]" />
+            <ChevronDown className="w-4 h-4 text-[#3de5bd]" />
           </div>
         </div>
       </div>

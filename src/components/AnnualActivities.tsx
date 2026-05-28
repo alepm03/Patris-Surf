@@ -136,14 +136,14 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
   const ActiveIcon = activeProgram.icon;
 
   return (
-    <section id="annual" className="relative py-24 md:py-32 bg-[#fafafc] border-t border-slate-100 overflow-hidden text-left">
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 via-transparent to-slate-50/50 pointer-events-none" />
+    <section id="annual" className="relative py-24 md:py-32 bg-white border-t border-[#cdefe4]/60 overflow-hidden text-left">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#cdefe4]/10 via-transparent to-[#cdefe4]/10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Header Block */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#3de5bd] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -162,14 +162,14 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`px-5 py-3 rounded-none font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 relative ${isActive ? 'text-white' : 'text-slate-500 hover:text-slate-900'
+                className={`px-5 py-3 rounded-none font-sans text-xs font-bold tracking-widest uppercase transition-all duration-300 relative ${isActive ? 'text-[#020617]' : 'text-slate-500 hover:text-slate-900'
                   }`}
               >
                 <span className="relative z-10">{tab.label}</span>
                 {isActive && (
                   <motion.span
                     layoutId="activeAnnualTabBg"
-                    className="absolute inset-0 bg-[#04f3af] rounded-none z-0"
+                    className="absolute inset-0 bg-[#3de5bd] rounded-none z-0"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -191,7 +191,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
             {/* Descriptive Content (Col 7) */}
             <div className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="p-3 bg-slate-50 border border-slate-200 text-[#04f3af]">
+                <div className="p-3 bg-slate-50 border border-slate-200 text-[#3de5bd]">
                   <ActiveIcon className="w-6 h-6" />
                 </div>
                 <h3 className="font-display font-black text-xl sm:text-2xl text-[#020617] uppercase tracking-tight">
@@ -207,7 +207,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
               <div className="pt-4 space-y-3.5">
                 {activeProgram.details.map((detail, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 bg-[#04f3af] rounded-none mt-2 shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-[#3de5bd] rounded-none mt-2 shrink-0" />
                     <span className="font-sans text-xs sm:text-sm text-slate-500 font-light">
                       {detail}
                     </span>
@@ -219,10 +219,10 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
               <div className="pt-6">
                 <Link
                   to="/contacto"
-                  className="inline-flex items-center gap-2 group text-xs font-mono font-bold tracking-widest text-[#04f3af] uppercase hover:text-slate-800 transition-colors"
+                  className="inline-flex items-center gap-2 group text-xs font-mono font-bold tracking-widest text-[#3de5bd] uppercase hover:text-slate-800 transition-colors"
                 >
                   <span>{lang === 'es' ? 'CONTACTAR E INSCRIBIRSE' : 'GET IN TOUCH & ENROL'}</span>
-                  <span className="p-1 px-1.5 bg-slate-50 border border-slate-200 rounded-none group-hover:bg-[#04f3af] group-hover:border-[#04f3af] group-hover:text-white transition-colors">→</span>
+                  <span className="p-1 px-1.5 bg-slate-50 border border-slate-200 rounded-none group-hover:bg-[#3de5bd] group-hover:border-[#3de5bd] group-hover:text-[#020617] transition-colors">→</span>
                 </Link>
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function AnnualActivities({ lang }: AnnualActivitiesProps) {
                 className="w-full h-full object-cover filter grayscale-[10%]"
               />
               <div className="absolute bottom-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 bg-brand-navy border border-slate-800 rounded-none">
-                <Sparkles className="w-3.5 h-3.5 text-[#04f3af]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#3de5bd]" />
                 <span className="font-mono text-[9px] font-bold text-white uppercase tracking-wider">
                   {lang === 'es' ? 'MÉTODO DE CLUB' : 'CLUB METHODOLOGY'}
                 </span>
