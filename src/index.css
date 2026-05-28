@@ -9,10 +9,12 @@
 
   --color-brand-navy: #020617;
   --color-brand-blue-deep: #0c4a6e;
-  --color-brand-turquoise: #04f3af;
-  --color-brand-cyan: #04f3af;
+  --color-brand-turquoise: #3de5bd;
+  --color-brand-cyan: #3de5bd;
+  --color-brand-mint: #3de5bd;
+  --color-brand-mint-light: #cdefe4;
   --color-brand-sand: #faf6f0;
-  --color-brand-orange: #04f3af;
+  --color-brand-orange: #3de5bd;
   --color-brand-charcoal: #020617;
 }
 
@@ -39,7 +41,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #04f3af;
+  background: #3de5bd;
 }
 
 /* Ambient Grain Texture - Disabled for user comfort */
@@ -49,7 +51,7 @@ html {
 
 /* Geometric Balance Core Classes */
 .ocean-gradient {
-  background: radial-gradient(circle at 30% 20%, #eff6ff 0%, #ffffff 100%);
+  background: radial-gradient(circle at 30% 20%, #e8faf4 0%, #f0fdf9 40%, #ffffff 100%);
 }
 
 .glass {

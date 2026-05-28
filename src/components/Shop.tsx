@@ -180,7 +180,7 @@ export default function Shop({ lang }: ShopProps) {
 
         {/* Title Deck */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#3de5bd] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -198,7 +198,7 @@ export default function Shop({ lang }: ShopProps) {
             return (
               <div
                 key={p.id}
-                className="group relative cursor-default flex flex-col justify-between h-full rounded-none bg-white border border-slate-200 hover:border-[#04f3af]/45 shadow-sm hover:shadow-md transition-all duration-500 overflow-hidden"
+                className="group relative cursor-default flex flex-col justify-between h-full rounded-none bg-white border border-slate-200 hover:border-[#3de5bd]/45 shadow-sm hover:shadow-md transition-all duration-500 overflow-hidden"
               >
                 {/* Image Container */}
                 <div className="relative aspect-square w-full overflow-hidden border-b border-slate-200">
@@ -213,15 +213,15 @@ export default function Shop({ lang }: ShopProps) {
                   {/* Favourite heart clicker */}
                   <button
                     onClick={() => toggleFav(p.id)}
-                    className="absolute top-4 right-4 z-20 p-2.5 rounded-none bg-white/95 border border-slate-200 text-slate-800 hover:text-[#04f3af] hover:border-[#04f3af] transition-all"
+                    className="absolute top-4 right-4 z-20 p-2.5 rounded-none bg-white/95 border border-slate-200 text-slate-800 hover:text-[#3de5bd] hover:border-[#3de5bd] transition-all"
                     aria-label="Add Favorites"
                   >
-                    <Heart className={`w-4 h-4 ${isFav ? 'fill-[#04f3af] text-[#04f3af]' : 'text-slate-700 hover:text-slate-900'}`} />
+                    <Heart className={`w-4 h-4 ${isFav ? 'fill-[#3de5bd] text-[#3de5bd]' : 'text-slate-700 hover:text-slate-900'}`} />
                   </button>
 
                   {/* Category overlay */}
                   <div className="absolute bottom-4 left-4 z-20">
-                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/20 uppercase">
+                    <span className="px-2.5 py-1 text-[8px] font-mono font-bold tracking-widest text-[#3de5bd] bg-white border border-[#3de5bd]/20 uppercase">
                       {p.category}
                     </span>
                   </div>
@@ -231,10 +231,10 @@ export default function Shop({ lang }: ShopProps) {
                 <div className="p-4 flex-grow flex flex-col justify-between">
                   <div>
                     <div className="flex justify-between items-start gap-4 mb-2">
-                      <h3 className="font-display font-black text-md sm:text-lg text-[#020617] group-hover:text-[#04f3af] transition-colors uppercase tracking-tight">
+                      <h3 className="font-display font-black text-md sm:text-lg text-[#020617] group-hover:text-[#3de5bd] transition-colors uppercase tracking-tight">
                         {p.title}
                       </h3>
-                      <span className="font-display font-black text-lg text-[#04f3af]">
+                      <span className="font-display font-black text-lg text-[#3de5bd]">
                         {p.price}
                       </span>
                     </div>
@@ -247,7 +247,7 @@ export default function Shop({ lang }: ShopProps) {
                   <div className="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
                     <button
                       onClick={() => setSelectedProduct(p)}
-                      className="inline-flex items-center gap-1.5 text-[9px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#04f3af] transition-all uppercase"
+                      className="inline-flex items-center gap-1.5 text-[9px] font-mono font-bold tracking-widest text-slate-400 group-hover:text-[#3de5bd] transition-all uppercase"
                     >
                       <span>{current.ctaDetails}</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
@@ -271,9 +271,9 @@ export default function Shop({ lang }: ShopProps) {
         <div className="flex justify-center mt-6">
           <a
             href="mailto:patrissurf@gmail.com?subject=Pedido%20ropa"
-            className="px-8 py-4 bg-slate-50 border border-slate-200 hover:border-[#04f3af] text-slate-700 hover:text-[#020617] hover:bg-slate-100/50 hover:shadow-sm font-mono text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-2"
+            className="px-8 py-4 bg-slate-50 border border-slate-200 hover:border-[#3de5bd] text-slate-700 hover:text-[#020617] hover:bg-slate-100/50 hover:shadow-sm font-mono text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-2"
           >
-            <ShoppingBag className="w-4 h-4 text-[#04f3af]" />
+            <ShoppingBag className="w-4 h-4 text-[#3de5bd]" />
             <span>{current.viewAllBtn}</span>
           </a>
         </div>
@@ -312,7 +312,7 @@ export default function Shop({ lang }: ShopProps) {
 
                 {/* Category tag bubble */}
                 <div className="absolute top-4 left-4">
-                  <span className="px-2 py-1 text-[8px] font-mono font-bold tracking-widest text-[#04f3af] bg-white border border-[#04f3af]/30 uppercase">
+                  <span className="px-2 py-1 text-[8px] font-mono font-bold tracking-widest text-[#3de5bd] bg-white border border-[#3de5bd]/30 uppercase">
                     {selectedProduct.category}
                   </span>
                 </div>
@@ -325,7 +325,7 @@ export default function Shop({ lang }: ShopProps) {
                     <h3 className="font-display font-black text-xl text-[#020617] uppercase tracking-tight">
                       {selectedProduct.title}
                     </h3>
-                    <span className="font-display font-bold text-xl text-[#04f3af] shrink-0">
+                    <span className="font-display font-bold text-xl text-[#3de5bd] shrink-0">
                       {selectedProduct.price}
                     </span>
                   </div>
@@ -354,7 +354,7 @@ export default function Shop({ lang }: ShopProps) {
                     <div className="space-y-1.5">
                       {current.specs.map((spec: string, sIdx: number) => (
                         <div key={sIdx} className="flex items-start gap-2 text-[10px] text-slate-600 font-light leading-relaxed">
-                          <Check className="w-3 h-3 text-[#04f3af] shrink-0 mt-0.5" />
+                          <Check className="w-3 h-3 text-[#3de5bd] shrink-0 mt-0.5" />
                           <span>{spec}</span>
                         </div>
                       ))}
@@ -367,7 +367,7 @@ export default function Shop({ lang }: ShopProps) {
                   <Link
                     to="/contacto"
                     onClick={() => setSelectedProduct(null)}
-                    className="w-full py-3.5 bg-[#04f3af] text-white hover:bg-slate-900 font-display font-bold text-xs tracking-widest uppercase transition-all flex items-center justify-center gap-2"
+                    className="w-full py-3.5 bg-[#3de5bd] text-[#020617] hover:bg-slate-900 hover:text-white font-display font-bold text-xs tracking-widest uppercase transition-all flex items-center justify-center gap-2"
                   >
                     <span>{current.modalAddToCart}</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -382,7 +382,7 @@ export default function Shop({ lang }: ShopProps) {
               {/* Absolute Close button */}
               <button
                 onClick={() => setSelectedProduct(null)}
-                className="absolute top-4 right-4 z-20 p-2.5 rounded-none bg-white border border-slate-200 text-slate-800 hover:text-[#04f3af] transition-all"
+                className="absolute top-4 right-4 z-20 p-2.5 rounded-none bg-white border border-slate-200 text-slate-800 hover:text-[#3de5bd] transition-all"
                 aria-label="Close Product"
               >
                 ✖

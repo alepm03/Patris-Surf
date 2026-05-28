@@ -8,7 +8,7 @@ export default function Layout() {
   const { lang } = useLang();
 
   return (
-    <div className="relative min-h-screen w-full bg-[#ffffff] font-sans antialiased text-slate-900 selection:bg-[#04f3af]/20 selection:text-[#020617]">
+    <div className="relative min-h-screen w-full bg-[#ffffff] font-sans antialiased text-slate-900 selection:bg-[#3de5bd]/20 selection:text-[#020617]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.06),transparent_40%)] pointer-events-none" />
       <Navbar />
       <main>

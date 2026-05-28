@@ -110,7 +110,7 @@ export default function Collaborations({ lang }: CollaborationsProps) {
         
         {/* Title Deck */}
         <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="font-mono text-xs text-[#04f3af] font-bold tracking-[0.3em] uppercase mb-4 block">
+          <span className="font-mono text-xs text-[#3de5bd] font-bold tracking-[0.3em] uppercase mb-4 block">
             {current.tag}
           </span>
           <h2 className="font-display font-black text-3xl md:text-5xl tracking-tight text-[#020617] mb-6 uppercase">
@@ -125,9 +125,9 @@ export default function Collaborations({ lang }: CollaborationsProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
           
           {/* Left Block description (Col 4) */}
-          <div className="lg:col-span-4 p-8 bg-white border border-slate-250 hover:border-[#04f3af]/40 shadow-xs flex flex-col justify-between transition-all">
+          <div className="lg:col-span-4 p-8 bg-white border border-slate-250 hover:border-[#3de5bd]/40 shadow-xs flex flex-col justify-between transition-all">
             <div className="space-y-4">
-              <div className="p-3 bg-[#04f3af]/10 border border-[#04f3af]/20 text-[#04f3af] inline-block">
+              <div className="p-3 bg-[#3de5bd]/10 border border-[#3de5bd]/20 text-[#3de5bd] inline-block">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="font-display font-black text-lg sm:text-xl text-[#020617] uppercase tracking-tight">
@@ -141,7 +141,7 @@ export default function Collaborations({ lang }: CollaborationsProps) {
             <div className="pt-8 border-t border-slate-100">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-[#04f3af] hover:text-[#020617] transition-colors uppercase"
+                className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-widest text-[#3de5bd] hover:text-[#020617] transition-colors uppercase"
               >
                 <span>{current.learnMoreBtn}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -158,7 +158,7 @@ export default function Collaborations({ lang }: CollaborationsProps) {
               >
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="font-mono text-[9px] text-[#04f3af] font-bold tracking-widest uppercase pb-1.5 block">
+                    <span className="font-mono text-[9px] text-[#3de5bd] font-bold tracking-widest uppercase pb-1.5 block">
                       {p.type}
                     </span>
                     <Award className="w-3.5 h-3.5 text-slate-300" />

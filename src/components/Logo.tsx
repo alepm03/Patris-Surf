@@ -24,7 +24,7 @@ export default function Logo({
           cx="100" 
           cy="100" 
           r="86" 
-          fill="#04f3af"
+          fill="#3de5bd"
         />
         
         {/* Corporate Circle line */}
